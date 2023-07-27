@@ -1,12 +1,15 @@
 {
+  "homepage": "http://MihirMalaviya.github.io/turtletutoring-website",
   "name": "turtletutoring",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "next build",
     "export": "next export",
     "lint": "next lint",
     "tailwind": "npx tailwindcss -i styles/tailwind.css -o public/main.css --watch"
@@ -39,6 +42,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "gh-pages": "^5.0.0",
     "next": "^13.4.10",
     "postcss": "^8.4.26",
     "tailwindcss": "^3.3.3",
