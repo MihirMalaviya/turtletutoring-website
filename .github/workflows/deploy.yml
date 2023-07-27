@@ -26,11 +26,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
-
-      - name: Fix permissions
-        run: |
-          chmod -c -R +rX "_site/" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
