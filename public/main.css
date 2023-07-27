@@ -1314,6 +1314,10 @@ h6 {
   margin-bottom: 0.75rem !important;
 }
 
+.\!mr-auto {
+  margin-right: auto !important;
+}
+
 .block {
   display: block;
 }
@@ -1497,6 +1501,10 @@ h6 {
 
 .self-center {
   align-self: center;
+}
+
+.justify-self-start {
+  justify-self: start;
 }
 
 .overflow-hidden {
@@ -1755,6 +1763,11 @@ h6 {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .\!pt-0 {

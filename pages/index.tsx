@@ -5,8 +5,7 @@ import Accordion from "../components/Accordian";
 import InfoCard from "../components/InfoCard";
 import styles from "../styles/landing.module.css";
 import Button from "../components/Button";
-import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
-
+import ChevronRightSharpIcon from "@mui/icons-material/ChevronRightSharp";
 
 const HomePage: React.FC = () => {
   return (

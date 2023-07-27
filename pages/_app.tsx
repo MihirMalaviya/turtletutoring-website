@@ -17,7 +17,7 @@ interface FooterLinkProps {
 function FooterLink({ href, text }: FooterLinkProps) {
   return (
     <Link href={href} passHref>
-      <p role="button" className="text-white hover:!text-purple-300 hover:underline transition duration-75">
+      <p role="button" className="w-fit text-white hover:!text-purple-300 hover:underline transition duration-75">
         {text}
       </p>
     </Link>
@@ -116,7 +116,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <hr className="my-3 h-[2px] bg-white" />
                   <div>
                     <Link href="mailto:turtletutoringnj@gmail.com" passHref>
-                      <p role="button" className="text-white hover:!text-purple-300 hover:underline transition duration-75">
+                      <p role="button" className="w-fit text-white hover:!text-purple-300 hover:underline transition duration-75">
                         Email Us
                       </p>
                     </Link>

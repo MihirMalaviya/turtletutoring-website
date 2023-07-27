@@ -64,7 +64,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       break;
     case "lg":
       fontSize = "text-lg";
-      padding = "py-3 px-4";
+      padding = "py-2 px-4";
       break;
     default:
       fontSize = "text-md";
