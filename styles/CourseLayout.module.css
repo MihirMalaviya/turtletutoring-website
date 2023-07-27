@@ -1,0 +1,17 @@
+/* .transparentGradient {
+  -webkit-mask-image: linear-gradient(to top, transparent, black);
+  mask-image: linear-gradient(to top, transparent, black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
+  height: 30rem;
+  filter: 
+  brightness(.5)
+  contrast(1.5)
+  hue-rotate(10deg)
+  ;
+} */
+

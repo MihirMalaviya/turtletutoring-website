@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl !leading-snug;
+  }
+  h2 {
+    @apply text-4xl !leading-snug;
+  }
+  h3 {
+    @apply text-3xl !leading-snug;
+  }
+  h4 {
+    @apply text-2xl !leading-snug;
+  }
+  h5 {
+    @apply text-xl !leading-snug;
+  }
+  h6 {
+    @apply text-lg !leading-snug;
+  }
+}

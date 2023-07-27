@@ -1,0 +1,65 @@
+.courseCardImage {
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  transition: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 300ms;
+  /* filter:blur(.2px); */
+  overflow: hidden !important;
+}
+
+.courseCardImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the alpha value to control the darkness */
+  border-radius: .5rem;
+  /* filter: blur(40px); */
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+  z-index: -1;
+  /* backdrop-filter: blur(5px)  */
+  /* brightness(150%) */
+  overflow: hidden !important;
+
+}
+
+.courseCardImage:hover::before {
+  opacity: 1;
+  /* backdrop-filter: blur(30px)  */
+  /* brightness(150%) */
+  overflow: hidden !important;
+
+}
+
+.courseCardImage:hover {
+  background-size: 110%;
+  overflow: hidden !important;
+}
+
+.textShadow {
+  text-shadow: 0 0 10px black;
+}
+
+.bgBlur {
+  backdrop-filter: blur(20px) !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .courseCardImage {
+    background-size: cover;
+  }
+  .courseCardImage:hover {
+    background-size: cover;
+  }
+}

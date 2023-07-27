@@ -1,0 +1,16 @@
+.teamCardBg {
+  background-color: #faf6e4;
+  background: linear-gradient(135deg, #dcf4e055 25%, transparent 25%) -22px 0/
+      44px 44px,
+    linear-gradient(225deg, #c7f4cf 25%, transparent 25%) -22px 0/ 44px 44px,
+    linear-gradient(315deg, #c7f4cf55 25%, transparent 25%) 0px 0/ 44px 44px,
+    linear-gradient(45deg, #c7f4cf 25%, #faf6e4 25%) 0px 0/ 44px 44px;
+
+  box-shadow: 0 2rem 4rem #1717, inset 0 0 40px #dcf4e0, inset 0 -2px 10px #fff,
+    inset 0 -2px 4px #0a0;
+}
+
+.teamCardBg:hover {
+  box-shadow: 0 2rem 5rem #5c6, inset 0 0 40px #dcf4e0, inset 0 -2px 10px #fff,
+    inset 0 -2px 4px #0a0;
+}
