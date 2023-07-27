@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out -t true",
     "build": "next build",
     "export": "next export",
     "lint": "next lint",
