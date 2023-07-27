@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         rel="noreferrer noopener"
         className="me-3 text-white invert hover:scale-90 ease-in-out duration-150"
       >
-        <Image src={link.src} alt={link.alt} width={35} height={35} />
+        <img src={link.src} alt={link.alt} width={35} height={35} />
       </a>
     ));
   };

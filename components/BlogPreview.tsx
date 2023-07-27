@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "@mui/joy/Card";
-// import Button from "@mui/joy/Button";
 import Button from "../components/Button";
 import Image from "next/image";
 
@@ -21,9 +20,14 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({
   image,
   href,
 }) => {
+  const handleReadMoreClick = () => {
+    // Navigate to the provided URL when "Read More" is clicked
+    // stupid solution cus nextjs is stupid
+    window.location.href = href;
+  };
+
   return (
-    <>
-    <a href={href} className="block">
+    <div className="block" onClick={handleReadMoreClick}>
       <Card className="border border-stone-200 bg-white shadow-lg rounded-xl overflow-hidden hover:!bg-green-50 hover:!border-green-200 ease-in-out duration-200">
         <div className="flex flex-col p-1">
           {/* Image */}
@@ -47,18 +51,11 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({
             </p>
             {/* Blog description */}
             <p className="text-stone-800">{description}</p>
-            {/* <Button
-              className="shadow-sm self-center rounded mt-6 bg-green-200 text-green-800 border !border-green-300 hover:!border-green-700 hover:bg-green-600 hover:text-white transition duration-100"
-              size="lg"
-            >
-              Read More
-            </Button> */}
             <Button
               className="shadow-sm self-center mt-6"
-              // buttonClassName="schib"
               size="md"
-              href={href}
-              // hasBorder={false}
+              // Use an empty href since it's required by the Button component but we handle the click manually
+              href=""
               variant="primary"
             >
               Read More
@@ -66,8 +63,7 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({
           </div>
         </div>
       </Card>
-    </a>
-    </>
+    </div>
   );
 };
 

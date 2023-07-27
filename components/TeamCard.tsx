@@ -67,7 +67,7 @@ const TeamCard: React.FC<CardProps> = ({
 
   return (
     <Card className={cardClasses}>
-      <img
+      <Image
         src={imageError ? placeholderImage : imagePath}
         alt={name}
         onError={handleImageError}

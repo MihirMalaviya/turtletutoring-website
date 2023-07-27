@@ -88,7 +88,7 @@ const MainNavbar: React.FC = () => {
         <Container>
           <Link href="/" passHref={true}>
             <Navbar.Brand className="d-flex flex-row schib font-extrabold !drop-shadow-[0_0_8px_rgba(255,255,255,1)]">
-              <Image
+              <img
                 src="/logotransparentblack.png"
                 className="mx-3 !drop-shadow-[0_0_8px_rgba(255,255,255,1)]"
                 width="32"
