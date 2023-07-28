@@ -149,7 +149,7 @@ const HomePage: React.FC = () => {
           ],
           [
             "Do volunteers earn volunteer hours?",
-            "Yes! Volunteers will receive volunteer hours for the time that they take to teach and prepare for a course. Certificates will be handed out each month, indicating the number of hours they earned.",
+            "Yes! Volunteers will receive volunteer hours for the time that they take to teach and prepare for a course. Certificates are handed out monthly to indicate the number of hours they earned.",
           ],
         ]}
       />
